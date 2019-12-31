@@ -1,25 +1,75 @@
-*{
-    margin: 0;
-    padding: 0;
+body{
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+}
+body > .container{
+background-color: grey;
+height: 1000vh;
 }
 
-.wrapper{
-    width: 1170px;
-    margin: 0 auto;
+.header{
+    background-color: lightgray;
+    height:  auto;
+    max-width: 100%;
 }
 
-.logo{
-    width: 20%;
-    float: left;
-    padding: 30px 0 0;
-    font-size: 25em;
+.header h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 50px;
     font-weight: 700;
-    color: #fff;
+}
+
+.header p{
+text-align: center;
+font-size: 20px;
+font-style: italic;
+padding: 20px 25%;
 }
 
 nav{
-    width: 75%;
-    float: right;
-    text-align: right;
-    padding: 30px 0 0;
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+nav ul{
+    
+    padding: 10px;
+    margin: 0px 0px 10px;
+    display:flex;
+    background-color: rgb(65, 63, 63);
+    justify-content: flex-end;
+}
+
+nav li{
+    list-style-type: none;
+    display: block;
+    padding: 10px;
+
+}
+
+.logo{
+    margin: 0px 0px 10px;
+    padding: 15px 20px;
+    background-color: rgb(110, 107, 107);
+    color: white;
+    font-size: 1.5em;
+    font-weight: 700;
+   }
+
+nav a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color: darkgray;
+}
+
+nav ul a{
+    text-transform: capitalize;
+    font-size: large;
+    padding: 10px;
 }
